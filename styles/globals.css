@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply box-border font-inter;
+  }
+
+  h1 {
+    @apply text-5xl text-gray-700 leading-tight;
+  }
+
+  h2 {
+    @apply text-3xl text-gray-700 leading-tight;
+  }
+
+  h3 {
+    @apply text-xl text-gray-700 leading-tight;
+  }
+}
+
+@layer components {
+  /* TEXT */
+
+  .title {
+    @apply text-gray-900 text-4xl font-bold;
+  }
+
+  .subtitle {
+    @apply text-gray-700 text-2xl font-bold;
+  }
+
+  /* LINK */
+
+  .link {
+    @apply text-gray-700 font-rubik;
+  }
+
+  /* BUTTON */
+
+  .btn {
+    @apply bg-white hover:bg-gray-100 text-gray-700 border-2 border-gray-700 font-bold py-2 px-4 rounded font-rubik;
+  }
+
+  .btn.highlight {
+    @apply bg-gray-700 hover:bg-gray-800 text-white;
+  }
+
+  .btn:disabled {
+    @apply bg-gray-200 text-gray-500 border-none cursor-not-allowed;
+  }
+
+  /* SLOT */
+
+  .slot {
+    @apply bg-gray-100 hover:bg-gray-200 p-4 rounded-lg transition ease-in-out;
+  }
+
+  .slot.highlight {
+    @apply bg-gray-700 hover:bg-gray-800;
+  }
+
+  .slot.active {
+    @apply bg-gray-300 text-white;
+  }
+
+  /* Card */
+
+  .card {
+    @apply bg-white border-2 border-gray-100 p-4 rounded-lg shadow-lg;
+  }
+}
