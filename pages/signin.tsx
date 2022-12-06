@@ -63,7 +63,7 @@ const Signin = () => {
             <span className="bg-white text-gray-400 px-5">Sign in with</span>
           </h3>
           <div>
-            <button className="btn w-full mt-10" onClick={signInWithGoogle}>
+            <button className="btn w-full mt-10" onClick={signInWithGoogle} disabled>
               Google
             </button>
           </div>
