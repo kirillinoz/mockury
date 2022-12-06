@@ -5,6 +5,7 @@ import Book from "./elements/Book";
 import { book } from "../../assets/models";
 import Watermark from "./elements/Watermark";
 import { TextureType } from "../../types";
+import { useSession } from "@supabase/auth-helpers-react";
 
 type SceneProps = {
   scene: React.RefObject<HTMLDivElement>;
@@ -15,6 +16,8 @@ type SceneProps = {
 };
 
 const Scene: FC<SceneProps> = ({ scene, format, camera, stage, texture }) => {
+  const session = useSession();
+
   const [maxHeight, setMaxHeight] = useState<string>("none");
   const [position, setPosition] = useState<[number, number, number]>([180, -90, 0]);
   const [visible, setVisible] = useState<boolean>(true);
@@ -71,7 +74,7 @@ const Scene: FC<SceneProps> = ({ scene, format, camera, stage, texture }) => {
                 book.rotation[camera].z,
               ]}
             />
-            {/*<Watermark visible={visible} position={position} />*/}
+            {!session && <Watermark visible={visible} position={position} />}
           </Suspense>
         </Canvas>
       </div>

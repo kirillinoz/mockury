@@ -14,8 +14,13 @@ import Element from "../components/studio/sidebar/4.Element";
 // Types and enums
 import { SidebarType, TextureType } from "../types";
 import { FormatEnum, CameraEnum, StageEnum } from "../enums";
+import Link from "next/link";
+import { useSession } from "@supabase/auth-helpers-react";
 
 const Studio: FC = () => {
+  // Session
+  const session = useSession();
+
   // Scene
   const scene = useRef<HTMLDivElement>(null);
 
@@ -35,9 +40,15 @@ const Studio: FC = () => {
       </Head>
       <div className="w-screen h-screen bg-grid">
         <Header>
-          <button className="btn" disabled>
-            Sign in
-          </button>
+          {session ? (
+            <Link href="/settings" className="btn">
+              Settings
+            </Link>
+          ) : (
+            <Link href="/signup" className="btn">
+              Sign up
+            </Link>
+          )}
         </Header>
         <div className="flex w-full">
           <div className="max-w-fit flex pl-6 pr-3 py-6">

@@ -13,17 +13,16 @@ const Footer = () => {
               Contact us
             </Link>
           </div>
-          {/*<div className="px-5 py-2">
+          <div className="px-5 py-2">
             <Link href="/terms" className="text-gray-100 hover:text-gray-200">
               Terms of use
             </Link>
           </div>
           <div className="px-5 py-2">
             <Link href="/privacy" className="text-gray-100 hover:text-gray-200">
-              Privacy
+              Privacy policy
             </Link>
           </div>
-        */}
         </nav>
         <p className="mt-8 text-center text-base text-gray-300">
           &copy; {new Date().getFullYear()} Mockury. All rights reserved.
