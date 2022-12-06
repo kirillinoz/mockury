@@ -140,13 +140,19 @@ const Signup = () => {
               <div>
                 <p className="text-center">
                   By signing up, you agree to our{" "}
-                  <Link href="/terms" className="link">
+                  <a
+                    href="https://twisty-professor-6d5.notion.site/Mockury-fe8a16d96ccd4dada0f2809afac5281d"
+                    className="link"
+                  >
                     terms of service
-                  </Link>{" "}
+                  </a>{" "}
                   and{" "}
-                  <Link href="/privacy" className="link">
+                  <a
+                    href="https://twisty-professor-6d5.notion.site/Mockury-fe8a16d96ccd4dada0f2809afac5281d"
+                    className="link"
+                  >
                     privacy policy
-                  </Link>
+                  </a>
                   .
                 </p>
               </div>
