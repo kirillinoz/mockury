@@ -16,8 +16,10 @@ Mockury is a web application that allows you to create mockups for your books. Y
 3) `npm install`
 
 ## Usage
-1) `npm run start`
-2) Open your browser and go to http://localhost:3000
+1) Create .env.local file
+2) Add `NEXT_PUBLIC_SUPABASE_URL` and `NEXT_PUBLIC_SUPABASE_ANON_KEY`
+3) `npm run start`
+4) Open your browser and go to http://localhost:3000
 
 ## Folder Structure
 ```bash
