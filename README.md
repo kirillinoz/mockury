@@ -2,7 +2,7 @@
 [Demo](https://mockury.vercel.app) | [Code](https://github.com/kirillinoz/mockury)
 
 ## Overview
-Mockury is a web application that allows you to create mockups for your books. You can choose format of the image, camera angle and background. As well as download a template to fill in your book design and upload it back to the website. Afterwards you can export the resulting image and share it anywhere you want. Mockury makes use of Three.js, so all 3D rendering happens locally on your machine.
+Mockury is a web application that allows you to create mockups for your books. You can choose the format, camera angle, and background. As well as download a template to fill in your book design and upload it back to the website. Afterward, you can export the resulting image and share it anywhere. Mockury uses Three.js, so all 3D rendering happens locally on your machine.
 
 ## Table of Contents
 * [Installation](#installation)
